@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+.main {
+  height: 100vh;
+  background-color: #4070f4;
+}
+
+.header_text {
+  color: #fff;
+  padding: 42px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.login_form,
+.register_form {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/644/229/286/sea-the-sky-water-landscape-wallpaper-preview.jpg);
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px 16px;
+}
+
+.head_text {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+input {
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  margin: 6px 0;
+  outline: none;
+  background: none;
+  border: none;
+  padding: 6px 0;
+  border-bottom: 2px solid#CACACA;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.pswrd {
+  display: grid;
+  position: relative;
+}
+.eye-icon {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.social_btn {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.login_btn,
+.register_btn {
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  padding: 8px 0;
+  background-color: navy;
+  border: 0;
+  border-radius: 23px;
+  margin-top: 16px;
+}
+.login_btn {
+  margin-top: 45px;
+}
+
+.fb_btn,
+.google_btn {
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  padding: 6px 27px;
+  border: 0;
+  margin-top: 32px;
+}
+
+.fb_btn {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #002c52;
+}
+
+.google_btn {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #b71818;
+}
+
+.end_text {
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+.footer_text {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  padding: 60px 10px;
+}
+
+@media screen and (max-width: 720px) {
+  .main {
+    height: 100%;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 0 50px;
+  }
+  .footer_text {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header_text {
+    padding: 24px;
+    font-size: 24px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .fb_btn,
+  .google_btn {
+    font-size: 16px;
+    padding: 6px 20px;
+  }
+}

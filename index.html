@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Form validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="main">
+        <p class="header_text">Register Login Widget</p>
+        <div class="container">
+            <form class="login_form" action="" autocomplete="off" name="myForm" onsubmit="return validateForm1()">
+                <p class="head_text">Login</p>
+                <input type="email" placeholder="Email" required id="email1">
+                <span style="color: red" id="error1"></span>
+                <div class="pswrd">
+                    <input type="password" placeholder="Password" class="password" required
+                        id="password"><i class='bx bx-hide eye-icon'></i></input>
+                </div>
+                <p style="color: red" id="message"></p>
+                <input class="login_btn" type="submit" value="LOGIN NOW"></input>
+                <div class="social_btn">
+                    <div class="fb_btn">
+                        <img src="https://img.icons8.com/color/344/facebook-new.png"
+                            width="17px" height="19px" style="margin-Bottom:-2.5px;">
+                        Facebook
+                    </div>
+                    <div class="google_btn">
+                        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" width="14px" height="14px">
+                        Google
+                    </div>
+                </div>
+                <p class="end_text" style="padding-top: 17px;">Don't have an account?</p>
+            </form>
+            <form class="register_form" action="" name="myForm" autocomplete="off" onsubmit="return validateForm2()">
+                <p class="head_text">Register</p>
+                <input type="email" placeholder="Email" id="email2" required><span style="color: red" id="error2"></span>
+                <input type="username" placeholder="Username" id="username" required><span style="color: red"
+                    id="msg"></span>
+                <div class="pswrd"><input type="password" placeholder="Password" class="password" required
+                        id="passwords">
+                </div><span style="color: red" id="messages"></span>
+                <div class="pswrd"><input type="password" placeholder="Confirm Password" class="password" required
+                        id="passwordss"> <i class='bx bx-hide eye-icon'></i>
+                </div><span style="color: red" id="messagess"></span>
+                <span style="color: red" id="messagess"></span>
+                <input class="register_btn" type="submit" value="REGISTER"></input>
+                <p class="end_text" style="padding-top: 12px;">By clicking register. | agree to your terms</p>
+            </form>
+        </div>
+        <p class="footer_text">@ 2022 Register Login Widget. All rights reserved | Designed by Umesh</p>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
