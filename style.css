@@ -137,6 +137,11 @@ input {
     gap: 50px;
     padding: 0 50px;
   }
+   input {
+    font-size: 15px;
+    padding: 8px 0;
+  }
+  
   .footer_text {
     padding: 40px 20px;
   }
